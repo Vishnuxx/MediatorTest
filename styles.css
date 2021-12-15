@@ -66,15 +66,56 @@ body{
 
 }
 
-.main{
-    display: flex;
+#resizer-v{
+    grid-area: resizer-v;
+}
 
+#resizer-h{
+    grid-area: resizer-h;
+}
+
+.main{
+    display:grid;
+    grid-template: 
+      "requestdiv sidebar-r 50vh"
+      "responsediv sidebar-r 50vh"
+     
+      / 80vw 20vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.req-div{
+    grid-area: requestdiv;
+}
+
+.res-div{
+    grid-area: responsediv;
 }
 
 .window {
+  
   background-color: #f5f9fc;
   border: 2px;
-  margin: 4px;
-  width:100%;
-  height:40rem;
+  margin: 5px;
+  
+}
+
+
+.sidebar-r{
+   grid-area: sidebar-r;
+   background-color: skyblue;
+   width: 20vw;
+}
+
+.sidebar-r .heading{
+   background-color: #474747;
+}
+.sidebar-r .content{
+    background-color: white;
+}
+
+.response-props{
+    color: green;
+    margin-right: 50px;
 }

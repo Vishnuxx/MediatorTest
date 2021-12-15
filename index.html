@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mediator API Testing Tool</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <link
       rel="stylesheet"
@@ -19,43 +19,45 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
   <body>
-    
-    <div style="margin:8px">
+    <div style="margin: 8px">
       <h3 class="title">Mediator</h3>
-      <p style="color:#8d8c8c">A Lightweight API Testing Tool</p>  
+      <p style="color: #8d8c8c">A Lightweight API Testing Tool</p>
     </div>
-    
-    <dir class="tools">
 
-    </dir>
-    <div class="main">
-      <div class="window req-div">
+    <dir class="tools"></dir>
+    <main class="main">
+      <section class="window req-div">
         <p class="section-heading">Request</p>
         <div class="toppanel">
-          
           <select name="request-type" id="req-type">
             <option value="GET">GET</option>
             <option value="POST">POST</option>
             <option value="DELETE">DELETE</option>
             <option value="UPDATE">UPDATE</option>
           </select>
-          <input type="url" id="url" style="width: 100%"/>
+          <input type="url" id="url" style="width: 100%" />
           <button class="primary-button" id="send">Send</button>
         </div>
-        
-        
-      </div>
-      <div class="window res-div">
+      </section>
+
+      <!-- <div id="resizer-v" class="resizer" data-direction="vertical"></div> -->
+
+      <section class="window res-div">
         <div class="toppanel">
-          <p class="section-heading">Response</p>
-         
+          <p  class="section-heading">Response</p>
+          <p id="status" class="response-props">Status: </p>
+          <p id="time" class="response-props">Time: </p>
+          <p id="size" class="response-props">Size: </p>
         </div>
-        <div id= "response"> 
+        <div id="response"></div>
+      </section>
 
-        </div>
-      </div>
-    </div>
+      <!-- <div id="resizer-h" class="resizer" data-direction="horizontal"></div> -->
 
-    <script src="main.js"></script>
+      <nav class="sidebar-r"></nav>
+    </main>
+
+    <!-- <script src="./js/draggableUI.js"></script> -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
