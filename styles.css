@@ -102,16 +102,17 @@ body{
 }
 
 
-.sidebar-r{
+#sidebar-r{
    grid-area: sidebar-r;
-   background-color: skyblue;
+   background-color: #f5f9fc;
    width: 20vw;
 }
 
-.sidebar-r .heading{
-   background-color: #474747;
+#sidebar-r .heading{
+   background-color: #dddada;
+   padding: 8px;
 }
-.sidebar-r .content{
+#sidebar-r .content{
     background-color: white;
 }
 

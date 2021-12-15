@@ -54,10 +54,18 @@
 
       <!-- <div id="resizer-h" class="resizer" data-direction="horizontal"></div> -->
 
-      <nav class="sidebar-r"></nav>
+      <nav id="sidebar-r"></nav>
     </main>
 
     <!-- <script src="./js/draggableUI.js"></script> -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/UI.js"></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+    <script type="module">
+      import Mediator from './js/main.js'
+
+      var mediator = new Mediator();
+      
+      console.log(Mediator)
+    </script>
   </body>
 </html>

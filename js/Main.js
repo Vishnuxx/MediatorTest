@@ -46,6 +46,12 @@ ajax.onloadend = function() {
 };
 
 function millisToMilliSeconds(millis) {
-    var seconds = millis.toFixed(000)//((millis % 60000).toFixed(0000));
+    var seconds = millis//.toFixed(0000);//((millis % 60000).toFixed(0000));
     return seconds;
-  }
+}
+
+function Mediator() {
+    this.history = [];
+}
+
+export default Mediator;
